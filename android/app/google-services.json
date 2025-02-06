@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "849322142604",
+    "project_id": "cartquest-7496d",
+    "storage_bucket": "cartquest-7496d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849322142604:android:06262944cec4b96b5004a9",
+        "android_client_info": {
+          "package_name": "com.example.cart_quest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFVsuTQ6qQqTOBsdgw1ypdG_Kk312VNiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
