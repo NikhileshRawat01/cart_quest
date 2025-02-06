@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:cart_quest/utils/constants/colors.dart';
-import 'package:cart_quest/utils/theme/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 import 'app.dart';
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-// Archit Binji
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
