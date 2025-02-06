@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/styles/spacing_styles.dart';
 import '../../../../helpers/helper_functions.dart';
@@ -10,7 +11,7 @@ class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
@@ -24,43 +25,80 @@ class LoginScreen extends StatelessWidget {
                 children: [
                   Image(
                     height: 150,
-                    image: AssetImage(dark ? TImages.lightAppLogo : TImages.darkAppLogo),
-                  )
-                  Text(TTexts.loginTitle, style: Theme.of(context).textTheme.headlineMedium),
+                    image: AssetImage(
+                        dark ? TImages.lightAppLogo : TImages.darkAppLogo),
+                  ),
+                  Text(TTexts.loginTitle,
+                      style: Theme.of(context).textTheme.headlineMedium),
                   const SizedBox(height: TSizes.sm),
-                  Text(TTexts.loginSubTitle, style: Theme.of(context).textTheme.bodyMedium),
+                  Text(TTexts.loginSubTitle,
+                      style: Theme.of(context).textTheme.bodyMedium),
                 ],
               ),
 
               /// form
-              Form(child: Column(
-                children:[
-                  /// email
-                  TextFormField(
-                    decoration: InputDecoration(
-                      prefixIcon: Icon(Iconsax.direct_right), labelText: TTexts.email,),
-                  ),
-                  const SizedBox(height: TSizes.spaceBtwInputFields,),
-
-                  /// password
-                  TextFormField(
-                    decoration: const InputDecoration(
-                      prefixIcon: Icon(Iconsax.password_check),
-                      labelText: TTexts.password,
-                      suffixIcon: Icon(Iconsax.eye_slash),
+              Form(
+                child: Column(
+                  children: [
+                    /// email
+                    TextFormField(
+                      decoration: const InputDecoration(
+                          prefixIcon: Icon(Iconsax.direct_right),
+                          labelText: TTexts.email),
                     ),
-                  ),
-                  const SizedBox(height: TSizes.spaceBtwInputFields / 2,),
+                    const SizedBox(
+                      height: TSizes.spaceBtwInputFields,
+                    ),
 
-                  /// remember me & forget password
-                  Row(
-                    children: [
-                      Checkbox(value: true, onChanged: (value){}),
-          const Text(TTexts.rememberMe),
-                    ],
-                  )
-                ],
-              ),)
+                    /// password
+                    TextFormField(
+                      decoration: const InputDecoration(
+                        prefixIcon: Icon(Iconsax.password_check),
+                        labelText: TTexts.password,
+                        suffixIcon: Icon(Iconsax.eye_slash),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: TSizes.spaceBtwInputFields / 2,
+                    ),
+
+                    /// remember me & forget password
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        /// remember me
+                        Row(
+                          children: [
+                            Checkbox(value: true, onChanged: (value) {}),
+                            const Text(TTexts.rememberMe),
+                          ],
+                        ),
+
+                        /// forget password
+                        TextButton(
+                            onPressed: () {},
+                            child: const Text(TTexts.forgetPassword)),
+                      ],
+                    ),
+                    const SizedBox(height: TSizes.spaceBtwSections),
+
+                    /// sign in button
+                    SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                            onPressed: () {},
+                            child: const Text(TTexts.signIn))),
+
+                    /// create account button
+                    SizedBox(
+                        width: double.infinity,
+                        child: OutlinedButton(
+                            onPressed: () {},
+                            child: const Text(TTexts.createAccount))),
+                    const SizedBox(height: TSizes.spaceBtwSections),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
