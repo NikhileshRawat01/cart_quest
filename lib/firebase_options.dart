@@ -64,6 +64,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '849322142604',
     projectId: 'cartquest-7496d',
     storageBucket: 'cartquest-7496d.firebasestorage.app',
+    androidClientId: '849322142604-rnor6sj85i43g1tboqdntju04mfe3hbc.apps.googleusercontent.com',
+    iosClientId: '849322142604-akegvjjjl1cm9efedjdfn3c3uldbb1nt.apps.googleusercontent.com',
     iosBundleId: 'com.example.cartQuest',
   );
 
@@ -73,6 +75,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '849322142604',
     projectId: 'cartquest-7496d',
     storageBucket: 'cartquest-7496d.firebasestorage.app',
+    androidClientId: '849322142604-rnor6sj85i43g1tboqdntju04mfe3hbc.apps.googleusercontent.com',
+    iosClientId: '849322142604-akegvjjjl1cm9efedjdfn3c3uldbb1nt.apps.googleusercontent.com',
     iosBundleId: 'com.example.cartQuest',
   );
 
@@ -85,4 +89,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'cartquest-7496d.firebasestorage.app',
     measurementId: 'G-9M836DYPGR',
   );
+
 }
